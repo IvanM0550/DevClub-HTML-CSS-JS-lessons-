@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=styleforhtml.css type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://use.fontawesome.com/c2ba6528e6.js"></script>
+    <title>HTML. Урок 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div class="body flex-row justify-content-center bg-light text-dark">
+          <div class="row">
+            <div class="col">
+            <p class="h3 text-center" style="padding-bottom: 2%">Урок 4 - Атрибуты</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-left:10%;margin-right:10%;   text-indent: 2%;">  
+          <p class="p">Атрибуты являются свойствами, применяемыми для предоставления дополнительной информации об элементе. Наиболее распространенные атрибуты включают в себя атрибут id, который идентифицирует элемент; атрибут class, который классифицирует элемент; атрибут src, который определяет источник встраиваемого содержимого; и атрибут href, который указывает ссылку на связанный ресурс.</p>
+
+<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="YzVWoXa" data-user="svetazhadan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/svetazhadan/pen/YzVWoXa">
+  </a> by SvetaZhadan (<a href="https://codepen.io/svetazhadan">@svetazhadan</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+       <p class="p"> Атрибуты определяются в открывающем теге после имени элемента. В общем, атрибуты включают в себя имя и значение. Формат для этих атрибутов состоит из имени атрибута со знаком равенства за ним, а затем в кавычках идет значение атрибута. Например, элемент <code>&lt;a&gt;</code> с атрибутом href будет выглядеть следующим образом:
+<code>&lt;a href="http://google.com"&gt;</code><code>&lt;/a&gt;</code>
+Данный код будет отображать текст «google» на веб-странице и при щелчке на этот текст ведёт пользователя на http://google.com. Элемент ссылки объявлен с помощью открывающего тега <code>&lt;a&gt;</code> и закрывающего тега <code>&lt;/a&gt;</code> охватывающих текст, а также атрибута и значения адреса ссылки объявленной через href="http://google.com" в открывающем теге.</p>
+
+<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="YzVWoXa" data-user="svetazhadan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/svetazhadan/pen/YzVWoXa">
+  </a> by SvetaZhadan (<a href="https://codepen.io/svetazhadan">@svetazhadan</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Также без атрибутов не обойдется тег <code>&lt;font&gt;</code>, задача которого является изменение шрифта, размера, цвета выделенного текста. К примеру: <code>&lt;font size=5&gt;</code>.
+
+<p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="YzVWoXa" data-user="svetazhadan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/svetazhadan/pen/YzVWoXa">
+  </a> by SvetaZhadan (<a href="https://codepen.io/svetazhadan">@svetazhadan</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<div class="alert-info">Примечание: Все атрибуты, которые доступны одному тегу, могут комбинироваться в одном теге не создавая отдельные. </div>
+</p>
+
+
+        </div>
+
+            <div class="d-flex justify-content-between">
+  <div class="p-2"><a class="nav-link" href="html2les.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>Предыдущий урок</a>
+  </div>
+    <div class="p-2"><a class="nav-link" href="html4les.html">Следующий урок<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+    </a>
+  </div>
+</div>
+    </div>
+</div>
+</body>

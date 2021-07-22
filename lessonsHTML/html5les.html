@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=styleforhtml.css type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://use.fontawesome.com/c2ba6528e6.js"></script>
+    <title>HTML. Урок 5</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div class="body flex-row justify-content-center bg-light text-dark">
+          <div class="row">
+            <div class="col">
+            <p class="h3 text-center" style="padding-bottom: 2%">Урок 5 - Формы</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-left:10%;margin-right:10%;   text-indent: 2%;">  
+
+            <p class=p> Тег <code class="t">&lt;form&gt;</code> используется для установления формы на странице. Веб-формы — их также часто называют HTML-формы — состоят из одного или нескольких элементов управления форм (иногда их также называют виджетами) и некоторых дополнительных элементов для структурирования формы. Элементами управления могут быть однострочные или многострочные текстовые поля, выпадающие списки, кнопки, чекбоксы, радиокнопки, большинство из которых создаются через html-элемент                
+             <code class="t">&lt;input&gt;</code>, однако есть и другие элементы, о которых тоже стоит узнать.</p>
+                <p class="h4 text-center">Теги для создания формы:</p>
+                <p class="teginfo p">Тег <code class="t">&lt;form&gt;</code> - устанавливает форму на веб-странице. Форма предназначена для обмена данными между пользователем и сервером. Область применения форм не ограничена отправкой данных на сервер, с помощью клиентских скриптов можно получить доступ к любому элементу формы, изменять его и применять по своему усмотрению.<br/>
+                <p class="p">Основной атрибут тега - name, он определяет внутреннее название формы.</p></p>
+                <p class="teginfo p">Теги<code class="t">&lt;input&gt;</code> - предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.<br/>
+                    <p class="h5 text-center">Атрибуты к тегу input</p></p>
+         
+                        <table class="table table-bordered">
+                            <tbody>
+                              <tr>
+                                <th scope="row"><code>placeholder="placeholder is here"</code>
+                                </th>
+                                <td>Подсказки в поле ввода(только при type=text)
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><code>required</code>
+                                </th>
+                                <td>Обязательное поле ввода(только при type=text)
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><code>value="value text"</code>
+                                </th>
+                                <td>Значение элемента
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><code>name="thisisnanme"</code>
+                                </th>
+                                <td>Внутреннее имя элемента
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><code>minlength="1"</code>
+                                </th>
+                              <td>Минимальное значение
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><code>maxlength="10"</code>
+                                </th>
+                                <td>Максимальное значение
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                
+                <p class="teginfo p">Тег <code class="t">&lt;textarea&gt;</code> - представляет собой элемент формы для создания области, в которую можно вводить несколько строк текста. В отличие от тега <code class="text-dark">&lt;input&gt;</code> в текстовом поле допустимо делать переносы строк, они сохраняются при отправке данных на сервер. </p>
+                <p class="h5 text-center">Атрибуты к тегу textarea</p>
+                <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th scope=""><code>rows</code>
+                        </th>
+                        <td>Ширина поля в символах
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope=""><code>cols</code>
+                        </th>
+                        <td>Высота поля в символах
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <p class="teginfo p">Тег <code class="t">&lt;button&gt;</code> - создает на веб-странице кнопки, предлагает расширенные возможности по созданию кнопок, например, на подобной кнопке можно размещать любые элементы HTML, в том числе изображения.</p>
+                <p class="h5 text-center">Атрибуты к тегу button</p>
+                <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th scope="row"><code>autofocus</code>
+                        </th>
+                        <td>Устанавливает, что кнопка получает фокус после загрузки страницы.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>Value</code>
+                        </th>
+                        <td>Содержание кнопки
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>name</code>
+                        </th>
+                        <td>Внутреннее название кнопки
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>onclick</code>
+                        </th>
+                        <td>Действия, которые будут происходить при нажатии
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>width</code>
+                        </th>
+                      <td>Изменение ширины кнопки
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>height</code>
+                        </th>
+                        <td>Изменение высоты кнопки
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                <p class="teginfo p">Тег <code class="t">&lt;select&gt;</code> - позволяет создать элемент интерфейса в виде раскрывающегося списка, а также список с одним или множественным выбором, как показано далее. </p>
+                <p class="h5 text-center">Атрибуты к тегу select</p>
+                <table class="table table-bordered">
+                    <tbody>
+                      <tr>
+                        <th scope="row"><code>autofocus</code>
+                        </th>
+                        <td>Устанавливает, что список получает фокус после загрузки страницы.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>required</code>
+                        </th>
+                        <td>Обязательный выбор
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>name</code>
+                        </th>
+                        <td>Внутреннее название окна выбора
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><code>size</code>
+                        </th>
+                        <td>Размер окна выбора
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                <p class="teginfo p">Тег <code class="t">&lt;option&gt;</code> -  определяет отдельные пункты списка, создаваемого с помощью контейнера <code class="text-dark">&lt;select&gt;</c>.</p>   
+                    <p class="h5 text-center">Атрибуты к тегу option</p>
+                    <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <th scope="row"><code>selected</code>
+                            </th>
+                            <td>Заранее устанавливает определенный пункт списка выделенным.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><code>value</code>
+                            </th>
+                            <td>Значение пункта списка, которое будет отправлено на сервер или прочитано с помощью скриптов
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><code>disabled</code>
+                            </th>
+                            <td>Заблокировать для доступа элемент списка.
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>  
+
+                    <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="ExmgdVz" data-user="svetazhadan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/svetazhadan/pen/ExmgdVz">
+                        </a> by SvetaZhadan (<a href="https://codepen.io/svetazhadan">@svetazhadan</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="p-2"><a class="nav-link" href="html4les.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>Предыдущий урок</a>
+            </div>
+              <div class="p-2"><a class="nav-link" href="html6les.html">Следующий урок<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+              </a>
+            </div>
+          </div>
+          </div>
+          </div>
+          </body>
+
+          
+          </html>
+          

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=styleforhtml.css type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://use.fontawesome.com/c2ba6528e6.js"></script>
+    <title>HTML. Урок 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div class="body flex-row justify-content-center bg-light text-dark">
+          <div class="row">
+            <div class="col">
+            <p class="h3 text-center" style="padding-bottom: 2%">2 урок – “Скелет” сайта</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" style="margin-left:10%;margin-right:10%;   text-indent: 2%;">  
+        <p class="p">По сути, HTML довольно простой язык, состоящий из элементов, которые могут быть применены к частям текста, чтобы придавать им различные значения (Это абзац? Это маркированный список? Это часть таблицы?), разделять документ на логические секции (есть ли у документа шапка? три столбца с контентом? меню навигации?) и добавлять контент на Вашу страницу, такой как фото и видео.</p>
+           <div class="alert alert-warning" role="alert">
+            <p class="p"> HTML-теги — основа языка HTML. Теги используются для разграничения начала и конца элементов в разметке.
+Каждый HTML-документ состоит из дерева HTML-элементов и текста. Каждый HTML-элемент обозначается начальным (открывающим) и конечным (закрывающим) тегом. Открывающий и закрывающий теги содержат имя тега.</p>
+</div>
+  <p>Чтобы создать тег необходимо добавить угловые скобки < и > вокруг элемента. Открывающий тег отмечает начало элемента. Он состоит из символа <, затем идёт имя элемента и завершается символом >; например, <code>&lt;head&gt;</code>. Закрывающий тег отмечает конец элемента. Он состоит из символа < с последующей косой чертой и именем элемента и завершается символом >; например, <code>&lt;/head&gt;</code>.
+     <p> Каждый html-документ начинается с тега <code>&lt;DOCTYPE&gt;</code>, который отвечает за корректное отображение веб-страницы браузером. Далее следует тег <code>&lt;html&gt;</code>, который отвечает за начало и конец сайта. За ним следует тег <code>&lt;head&gt;</code>. Данный тег предназначен для хранения данных не отображаемые на сайте. Например тег <code>&lt;title&gt;</code>, он предназначен для определения заголовка сайта. После всего начинается самый главный тег, тег <code>&lt;body&gt;</code>. Данный тег отвечает за отображения видимых данных на сайте.</p>
+           
+         
+        <div class="row">
+          <div class="col">
+        <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="YzVWoXa" data-user="svetazhadan" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/svetazhadan/pen/YzVWoXa">
+  </a> by SvetaZhadan (<a href="https://codepen.io/svetazhadan">@svetazhadan</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+        </div>
+
+        <p>Этот код показывает документ, начиная с объявления типа документа, <code>&lt;!DOCTYPE html&gt;</code>, затем сразу идёт элемент <code>&lt;html&gt;</code>. Внутри <code>&lt;html&gt;</code> идут элементы <code>&lt;head&gt;</code> и <code>&lt;body&gt;</code>. Элемент <code>&lt;head&gt;</code> содержит кодировку страницы через тег <code>&lt;meta charset="utf-8"&gt;</code> и название документа через элемент <code>&lt;title&gt;</code>. Элемент <code>&lt;body&gt;</code> включает в себя текст “Hello World”, поскольку он вложен в элемент <code>&lt;body&gt;</code>, то виден на веб-странице.</p>
+ </div>
+<div class="d-flex justify-content-between">
+  <div class="p-2"><a class="nav-link" href="html1les.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg>Предыдущий урок</a>
+  </div>
+    <div class="p-2"><a class="nav-link" href="html3les.html">Следующий урок<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+    </a>
+  </div>
+</div>
+        </div>
+        </div>
+        </div>
+
+</body>
+</html>
