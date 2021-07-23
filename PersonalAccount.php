@@ -33,7 +33,7 @@
 </head>
 <body onload="geturl();">
 <div style="background-color: black;">
-<div class="body_pa flex-row justify-content-center bg-dark text-white" style="margin-left: 10px; height: 100vh;">
+<div class="body_pa flex-row justify-content-center bg-dark text-white" style=" height: 100vh;">
 <div class="row">
 <?php require 'document_php/nav.php'?>
         <div class="col-8">
@@ -53,19 +53,22 @@
             <div class="col-6" style="padding-top: 100px;">
                 <p style="font-size:30px">Активные курсы</p>
                 <div class="progress" style="height:50px; border-radius:15px; background:black;">
+                    <span style="text-align:left; padding-left:10px; font-size:20px; z-index:2; margin-top:0.7%; position: absolute;">HTML</span>
                     <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#e09109; width: <?=$res_do1['html_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                        <span style="text-align:left; padding-left:10px; font-size:20px">HTML</span>
+                        
                     </div>
                   </div><br>
                   <div class="progress" style="height:50px; border-radius:15px; background:black;">
+                    <span style="text-align:left; padding-left:10px; font-size:20px; z-index: 2; margin-top:0.7%; position: absolute;">CSS</span>
                     <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#e09109; width: <?=$res_do2['css_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                        <span style="text-align:left; padding-left:10px; font-size:20px">CSS</span>
+                        
                     </div>
                   </div>
                   <br>
                   <div class="progress" style="height:50px; border-radius:15px; background:black;">
+                    <span style="text-align:left; padding-left:10px; font-size:20px; z-index: 2; margin-top: 0.7%; position: absolute;">JS</span>
                     <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#e09109; width: <?=$res_do3['js_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                        <span style="text-align:left; padding-left:10px; font-size:20px">JS</span>
+                        
                     </div>
                   </div>
             </div>
@@ -75,8 +78,5 @@
 </div>
 </div>
 </div>
-<?php
-    echo $level_res_res;
-?>
 </body>
 </html>

@@ -12,11 +12,11 @@
     <title>Курсы обучения</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
-<body onload="geturl();">
+<body onload="geturl();" style="height: 100vh;">
     <div style="background-color: black;">
         <div class="body_pa flex-row justify-content-center bg-dark text-white">
         <div class="row">
-        <?php require 'document_php/nav.php'?>
+        <?php require 'document_php/nav1.php'?>
           <div class="col-8">
             <p class="promo-courses">Список доступных курсов</p>
             <div class="row">

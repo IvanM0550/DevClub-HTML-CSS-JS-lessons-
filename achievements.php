@@ -12,11 +12,11 @@
     <title>Достижения</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
-<body onload="geturl();">
+<body onload="geturl();" style=" height: 100vh;">
     <div style="background-color: black;">
         <div class="body_pa flex-row justify-content-center bg-dark text-white">
         <div class="row">
-        <?php require 'document_php/nav.php'?>
+        <?php require 'document_php/nav1.php'?>
           <div class="col-8">
             <p class="promo-courses">Достижения</p>
             <div class="row">
@@ -67,16 +67,6 @@
                 </div>
             </div>
 
-        </div>
-        <div class="row">
-          <div class="col-8" style="margin-left: 400px;">
-        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxdVdJr" data-user="ivanm05" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; width:300px;">
-          <span>See the Pen <a href="https://codepen.io/ivanm05/pen/xxdVdJr">
-          </a> by IvanM05 (<a href="https://codepen.io/ivanm05">@ivanm05</a>)
-          on <a href="https://codepen.io">CodePen</a>.</span>
-        </p>
-        <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>  
-        </div>
         </div>
         </div>
         </div>
