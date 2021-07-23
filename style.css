@@ -206,7 +206,12 @@ padding:20px;
     height:100vh;
     color: #fff;
 }
+.naaav{
 
+}
+.naaav:hover{
+    color:orange;
+}
 /*Курсы обучения*/
 
 .lesname-courses {
@@ -263,3 +268,4 @@ padding:20px;
 .trophy{
     padding-top: 10px;
 }
+/*Адаптация*/

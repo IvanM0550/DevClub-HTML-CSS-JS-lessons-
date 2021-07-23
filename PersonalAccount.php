@@ -76,7 +76,7 @@
 </div>
 </div>
 <?php
-
+    echo $level_res_res;
 ?>
 </body>
 </html>

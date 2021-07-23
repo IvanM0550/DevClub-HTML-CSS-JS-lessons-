@@ -12,5 +12,7 @@
     
     $conn1->close();
     setcookie('user', $row_email_pass_check['name'], time()+3600*24*30, "/");
+    setcookie('user_id', $row_email_pass_check['id'], time()+3600*24*30, "/");
     header('Location: /PersonalAccount.php');
+    
 ?>
