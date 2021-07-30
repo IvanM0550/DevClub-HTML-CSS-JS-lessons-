@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 23 2021 г., 17:19
+-- Время создания: Июл 12 2021 г., 12:31
 -- Версия сервера: 5.6.38
 -- Версия PHP: 5.5.38
 
@@ -32,21 +32,22 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(150) DEFAULT NULL,
   `email` varchar(500) DEFAULT NULL,
-  `pass` varchar(500) DEFAULT NULL,
-  `level` int(11) NOT NULL DEFAULT '1',
-  `xp` int(11) NOT NULL DEFAULT '0',
-  `html_prog` int(3) NOT NULL DEFAULT '0',
-  `css_prog` int(3) NOT NULL DEFAULT '0',
-  `js_prog` int(3) NOT NULL DEFAULT '0'
+  `pass` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `pass`, `level`, `xp`, `html_prog`, `css_prog`, `js_prog`) VALUES
-(1, 'Ivan', '111@mail.ru', '123456', 4, 0, 25, 10, 8),
-(2, 'Sveta', '123456@mail.ru', '123456', 2, 0, 0, 0, 0);
+INSERT INTO `users` (`id`, `name`, `email`, `pass`) VALUES
+(1, '', '', ''),
+(2, 'Sveta', '123456@mail.ru', '123456'),
+(3, '', '', ''),
+(4, 'ivan', 'ivan@mail.ru', '12345345'),
+(5, '', '', ''),
+(6, 'Petya', 'ivan@mail.ru', '88888888'),
+(7, 'Larisa', 'lalalal@gmail.ru', '21123312321123'),
+(8, 'Fadya', 'fdghgh@gmail.ru', '123123');
 
 --
 -- Индексы сохранённых таблиц
@@ -56,8 +57,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `pass`, `level`, `xp`, `html_prog`, 
 -- Индексы таблицы `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `level` (`level`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT для сохранённых таблиц
@@ -67,7 +67,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

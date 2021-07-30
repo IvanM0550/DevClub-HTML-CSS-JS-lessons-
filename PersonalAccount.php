@@ -32,42 +32,65 @@
     <title>Личный кабинет</title>
 </head>
 <body onload="geturl();">
+  <style>
+    .d{
+      display: flex;
+    }
+    @media screen and (max-width: 1000px) {
+      .d{
+      display: block;
+margin-right: -200px;
+      padding: 0;
+      }
+    .body_pa{
+      width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+  .body_pa{
+    }
+}
+  </style>
 <div style="background-color: black;">
-<div class="body_pa flex-row justify-content-center bg-dark text-white" style=" height: 100vh;">
+<div class="body_pa flex-row justify-content-center bg-dark text-white">
 <div class="row">
-<?php require 'document_php/nav.php'?>
-        <div class="col-8">
-          <div class="row">
-            <div class="col-6">
-            <p class="promo">Привет, <?=$_COOKIE['user']?>,</p> 
-            <p class="promo">Что ты будешь учить сегодня?<?echo $res_do1[0];?></p>
-<br>    
-        <div class="lesname text-center" role="alert">
-        <p class="h"> HTML для начинающих</p>
-        <p class="les">Урок 1. Введение в HTML</p>
-        <button type="button" class="btn btn-dark" style="border-radius: 20px; padding: 10px 20px;">Начать</button>
-</div>
+  <?php require 'document_php/nav.php'?>
 
+        <div class="col-8">
+          <div class="row d">
+            <div class="col-6">
+            <p class="promo" style="font-size:30px">Привет, <?=$_COOKIE['user']?>,</p> 
+            <p class="promo" style="font-size:30px">Что ты будешь учить сегодня?<?echo $res_do1[0];?></p>
+<br><br> 
+<div class="card text-white bg-warning border-dark text-center" style="border-radius:30px; height: 190px;">
+
+  <div class="card-body">
+    <h5 class="card-title">HTML для начинающих</h5>
+    <p class="card-text">Урок 1. Введение в HTML</p>
+    <button type="button" class="btn btn-dark" style="border-radius: 20px; padding: 10px 20px;">Начать</button>
+
+  </div>
+</div> 
 
 </div>
             <div class="col-6" style="padding-top: 100px;">
                 <p style="font-size:30px">Активные курсы</p>
                 <div class="progress" style="height:50px; border-radius:15px; background:black;">
                     <span style="text-align:left; padding-left:10px; font-size:20px; z-index:2; margin-top:0.7%; position: absolute;">HTML</span>
-                    <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#e09109; width: <?=$res_do1['html_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" id="progress-bar1" role="progressbar"  style="width: <?=$res_do1['html_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         
                     </div>
                   </div><br>
                   <div class="progress" style="height:50px; border-radius:15px; background:black;">
                     <span style="text-align:left; padding-left:10px; font-size:20px; z-index: 2; margin-top:0.7%; position: absolute;">CSS</span>
-                    <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#e09109; width: <?=$res_do2['css_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" id="progress-bar1" role="progressbar"  style="width: <?=$res_do2['css_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         
                     </div>
                   </div>
                   <br>
                   <div class="progress" style="height:50px; border-radius:15px; background:black;">
                     <span style="text-align:left; padding-left:10px; font-size:20px; z-index: 2; margin-top: 0.7%; position: absolute;">JS</span>
-                    <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#e09109; width: <?=$res_do3['js_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-warning" id="progress-bar1" role="progressbar"  style="width: <?=$res_do3['js_prog']?>%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         
                     </div>
                   </div>
@@ -75,6 +98,8 @@
                   
 </div>
 </div>
+</div>
+
 </div>
 </div>
 </div>

@@ -21,14 +21,19 @@
             <p class="promo-courses">Избранные курсы</p>
             <div class="row">
                 <div class="col">
-                    <div class="lesname-fav text-center" role="alert">
-                        <i class="fa fa-trash fa-2x tr" aria-hidden="true"></i>
-                        <p class="h-courses">HTML. Курс для начинающих.</p>
-                        <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
+                    <div class="card text-white bg-warning border-dark" style="border-radius:30px; width: 300px;">
+                        <div class="card-body" style="position: relative; bottom:30px;">
+                            <div style="position:relative; right:20px">
+                            <div style="margin-left: 120px; position: relative; top:25px">
+                            <i class="fa fa-trash fa-2x tr" aria-hidden="true"></i>
+                            </div>
+                          <p class="card-text text-center h-courses">HTML. Курс для начинающих</p>
+                          </div>
+                          <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
                             <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                             </div>
                         </div>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>

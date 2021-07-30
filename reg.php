@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://use.fontawesome.com/c2ba6528e6.js"></script>
-    <title>Достижения</title>
+    <title>Регистрация</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style type="text/css">
   /*  .body_pa{
@@ -133,40 +133,59 @@ input[type="submit"]{
     font-size:15px;
 }
 #ei{
-    display:none;
+    display: none;
 }
 #pi{
     display: none;
 }
+#ni{
+    display: none;
+}
     </style>
     <script type="text/javascript">
-        function checklog(obj) {
+        /**function checklog(obj) {
             var email = obj.mailru.value;
             var pass = obj.passs.value;
+            var name = obj.name.value;
+            var name_pattern = [a-zA-Z]+;
             var email_pattern = /[0-9a-z_]+@[0-9a-z_]+\.[a-z]{2,5}/i;
             var pass_pattern = /[0-9a-z]+/i;
             var checklog1 = email_pattern.test(email);
+            var checklog3 = name_pattern.test(name);
             var checklog2 = pass_pattern.test(pass);
-            if(checklog1 == true && checklog2 == true){
+            if(checklog1 == true && checklog2 == true && name_pattern == true){
                 $('#dalee:hidden').css('display', 'block');
-                $('#check').css('display', 'none')
+                $('#check').css('display', 'none');
             }
-            else if(checklog1 == true && checklog2 == false){
+            else if(checklog1 == true && checklog2 == false && name_pattern == false){
                 $('#ei:hidden').css('display', 'block');
+                $('#ni:hidden').css('display', 'none');
                 
             }
-            else if(checklog1 == false && checklog2 == true){
+            else if(checklog1 == false && checklog2 == true && name_pattern == false){
                 $('#pi:hidden').css('display', 'block');
+                $('#ni:hidden').css('display', 'block');
                 
+            }
+            else if(checklog1 == true && checklog2 == true && name_pattern == false){
+                $('#ni:hidden').css('display', 'block');
+            }
+            else if(checklog1 == false && checklog2 == true && name_pattern == true){
+                $('#ei:hidden').css('display', 'block');
+            }
+            else if(checklog1 == true && checklog2 == false && name_pattern == true){
+                $('#pi:hidden').css('display', 'block');
             }
             else{
                 $('#ei:hidden').css('display', 'block');
                 $('#pi:hidden').css('display', 'block');
+                $('#ni:hidden').css('display', "block");
                 
             }
 
             
         }
+        */
     </script>
 </head>
 <body>
@@ -224,7 +243,7 @@ input[type="submit"]{
          </label>
         <label class="user" for="text">
         </label>
-       <input class="user-input" type="text" name="name" id="name" placeholder="Введите ваше имя"/>
+       <input class="user-input" type="text" name="name" id="name" placeholder="Введите ваше имя"/><div style="color:red" id=ni>Name Invalid</div>
      </div> 
 
       <div>
@@ -240,8 +259,8 @@ input[type="submit"]{
         <input type="checkbox" class="form-check-input ch" id="exampleCheck1" style="background-color:#F3CA65	;">
         <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
       </div>
-      <input type="button" id="check" value="Проверить" onclick="checklog(form1);">
-      <input type="submit" id="dalee" value="Зарегестрироваться" />
+      <!--<input type="button" id="check" value="Проверить" onclick="checklog(form1);">-->
+      <input type="submit" value="Зарегестрироваться" />
     </div>
   </form>  
 </div>

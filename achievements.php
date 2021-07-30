@@ -13,6 +13,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body onload="geturl();" style=" height: 100vh;">
+    <style>
+        .c{
+            display: flex;
+        }
+        @media screen and (max-width: 1100px) {
+            .c{
+                display: block;
+                width: 400px;
+            }
+        }
+    </style>
     <div style="background-color: black;">
         <div class="body_pa flex-row justify-content-center bg-dark text-white">
         <div class="row">
@@ -21,53 +32,73 @@
             <p class="promo-courses">Достижения</p>
             <div class="row">
             <div class="col">
-            <div class="lesname-fav text-center" role="alert" >
-                <p class="h-courses">HTML</p>
-                
-                    <div class="trophy">
-                      <p class="trophy-text fa fa-trophy fa-2x trophy-text" aria-hidden="true"><span style="font-family:Ubuntu; font-size:24px">: 3 из 10</span></p>
+
+                <div class="row c">
+                    <div class="col">
+                  <div class="card text-white bg-warning border-dark" style="border-radius:30px;">
+                      <a class="card-body" href="achievements/achhtml.html" style="text-decoration: none;">
+                        <h5 class="card-title text-center">    
+                            <p class="h-courses text-white" style="text-decoration: none;">HTML</p>           
+                        </h5>
+                        <div class="text-center">
+                          <p class="card-text">
+                            <div class="trophy">
+                                <p class="trophy-text fa fa-trophy fa-2x trophy-text text-white" aria-hidden="true"><span style="font-family:Ubuntu; font-size:24px">: 3 из 10</span></p>
+                              </div>
+                          <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
+                              <div class="progress-bar trophy-progress" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                          </div>
+                          </p>
+                          </div>
+                        </a>
                     </div>
-                <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
-                    <div class="progress-bar trophy-progress" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                </div>
+                <div class="col">
+                  <div class="card text-white bg-warning border-dark" style="border-radius:30px;">
+                      <a class="card-body" href="achievements/achcss.html" style="text-decoration: none;">
+                        <h5 class="card-title text-center">    
+                            <p class="h-courses text-white" style="text-decoration: none;">CSS</p>           
+                        </h5>
+                        <div class="text-center">
+                          <p class="card-text">
+                            <div class="trophy">
+                                <p class="trophy-text fa fa-trophy fa-2x trophy-text text-white" aria-hidden="true"><span style="font-family:Ubuntu; font-size:24px">: 3 из 10</span></p>
+                              </div>
+                          <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
+                              <div class="progress-bar trophy-progress" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                          </div>
+                          </p>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card text-white bg-warning border-dark" style="border-radius:30px;">
+                      <a class="card-body" href="achievements/achjs.html" style="text-decoration: none;">
+                        <h5 class="card-title text-center">    
+                            <p class="h-courses text-white" style="text-decoration: none;">JS</p>           
+                        </h5>
+                        <div class="text-center">
+                          <p class="card-text">
+                            <div class="trophy">
+                                <p class="trophy-text fa fa-trophy fa-2x trophy-text text-white" aria-hidden="true"><span style="font-family:Ubuntu; font-size:24px">: 3 из 10</span></p>
+                              </div>
+                          <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
+                              <div class="progress-bar trophy-progress" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                              </div>
+                          </div>
+                          </p>
+                          </div>
+                        </a>
                     </div>
                 </div>
 
-            </div>
-            </div>
-                
-            <div class="col">
-              <div class="lesname-fav text-center" role="alert" >
-                  <p class="h-courses">CSS</p>
-                  
-                      <div class="trophy">
-                        <p class="trophy-text fa fa-trophy fa-2x trophy-text" aria-hidden="true"><span style="font-family:Ubuntu; font-size:24px">: 3 из 10</span></p>
-                      </div>
-                  <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
-                      <div class="progress-bar trophy-progress" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                      </div>
-                  </div>
-  
-              </div>
-              </div>
-
-                            
-              <div class="col" style="width:500px">
-                <div class="lesname-fav text-center" role="alert" >
-                    <p class="h-courses">JS</p>
-                    
-                        <div class="trophy">
-                          <p class="trophy-text fa fa-trophy fa-2x trophy-text" aria-hidden="true"><span style="font-family:Ubuntu; font-size:24px">: 3 из 10</span></p>
-                        </div>
-                    <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
-                        <div class="progress-bar trophy-progress" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                    </div>
-    
                 </div>
                 </div>
             </div>
-
-        </div>
+            </div>
         </div>
         </div>
         </div>

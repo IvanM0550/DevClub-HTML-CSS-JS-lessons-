@@ -2,12 +2,14 @@
 	.naaav{
 		padding-left: 10px;
 		border-radius: 0 10px 10px 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
 	}.naaav:hover{
     	background: orange;
 	}
 
 </style>
-<div class="col-3 justify-content-between" style="background: black; height: 100vh; margin-left:0" onload="geturl();">
+<div class="col-3 justify-content-between" style="background: black; height: 100vh; margin-left:0">
 
   <nav class="nav flex-column navbar-expand-lg navbar-light" id=nav1>
     <div class=navbar-brand style="color:#fff"><a href="/">DevClub</a></div>

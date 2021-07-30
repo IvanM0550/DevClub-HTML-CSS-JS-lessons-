@@ -19,63 +19,72 @@
         <?php require 'document_php/nav1.php'?>
           <div class="col-8">
             <p class="promo-courses">Список доступных курсов</p>
-            <div class="row">
-            <div class="col">
-            <div class="lesname-courses text-center" role="alert" >
-                <p class="h-courses" id="hcou_1" onclick="openthedoor1();">HTML. Курс для начинающих.</p>
-                <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
-                    <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="card-group">
+                <div class="row">
+                  <div class="col">
+                <div class="card text-white bg-warning border-dark" style="border-radius:30px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">               
+                        <p class="h-courses" id="hcou_1" onclick="openthedoor1();">HTML.<br> Курс для начинающих.</p>
+                        <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
+                            <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div></h5>
                     </div>
-                </div>
-            </div>
-            <div class="ur1 text-white">
-              Урок 1.<br>
-              Урок 2.<br>
-              Урок 3.<br>
-              Урок 4.<br>
-              Урок 5.<br>
-              Урок 6.
-            </div>
-            </div>
-                
-            <div class="col">
-            <div class="lesname-courses text-center" role="alert">
-                <p class="h-courses">CSS. Курс для начинающих.</p>
-                <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
-                    <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  </div><br>
+                  
+                  <div class="ur1 text-white">
+                    Урок 1.<br>
+                    Урок 2.<br>
+                    Урок 3.<br>
+                    Урок 4.<br>
+                    Урок 5.<br>
+                    Урок 6.
+                  </div>
+</div>
+                    <div class="col">
+                  <div class="card text-white bg-warning border-dark" style="border-radius:30px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">               
+                        <p class="h-courses" id="hcou_1" onclick="openthedoor2();">CSS.<br> Курс для начинающих.</p>
+                        <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
+                            <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div></h5>
                     </div>
-                </div>
-            </div>
-            <div class="ur2 text-white">
-              Урок 1.<br>
-              Урок 2.<br>
-              Урок 3.<br>
-              Урок 4.<br>
-              Урок 5.<br>
-              Урок 6.
-            </div>
-            </div>
-
-                            
-            <div class="col">
-                <div class="lesname-courses text-center" role="alert">
-                    <p class="h-courses"> JS. Курс для начинающих.</p>
-                    <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
-                        <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                        </div>
+                  </div>
+                  <br>
+                  <div class="ur2 text-white">
+                    Урок 1.<br>
+                    Урок 2.<br>
+                    Урок 3.<br>
+                    Урок 4.<br>
+                    Урок 5.<br>
+                    Урок 6.
+                  </div> </div>
+                  <div class="col">
+                  <div class="card text-white bg-warning border-dark" style="border-radius:30px;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">               
+                        <p class="h-courses" id="hcou_1" onclick="openthedoor3();">JS.<br> Курс для начинающих.</p>
+                        <div class="progress" style="border-radius:15px; background:white; margin-top: 30px;">
+                            <div class="progress-bar" id="progress-bar1" role="progressbar"  style="background-color:#41A73F; width:16%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div></h5>
                     </div>
-                </div>
-                <div class="ur3 text-white">
-                  Урок 1.<br>
-                  Урок 2.<br>
-                  Урок 3.<br>
-                  Урок 4.<br>
-                  Урок 5.<br>
-                  Урок 6.
-                </div>
-                </div>
-            </div>
-        </div>
+                  </div>
+                  <br>
+                  <div class="ur3 text-white">
+                    Урок 1.<br>
+                    Урок 2.<br>
+                    Урок 3.<br>
+                    Урок 4.<br>
+                    Урок 5.<br>
+                    Урок 6.
+                  </div></div>
+              </div>
+              </div>
+           
         
         </div>
         
@@ -83,7 +92,6 @@
         
         </div><br>
         
-
         
 </body>
 </html>
